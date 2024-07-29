@@ -15,4 +15,11 @@
     <applicationListeners>
         <listener class="com.github.usbharu.intellijcopyprojectforreport.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.usbharu.intellijcopyprojectforreport.CopyFileNameAndTextAction"
+                class="com.github.usbharu.intellijcopyprojectforreport.CopyFileNameAndTextAction"
+                text="Copy filename and text">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
